@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <script>
+        function redirectToNoChoice() {
+            window.location.href = "no-choice.html";  // Redirect to the "No Choice" page
+        }
+
+        function redirectToThankYou() {
+            window.location.href = "thank-you.html";  // Redirect to the "Thank You" page
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Be My Valentine?</h1>
+        <div class="heart-container">
+            <span class="moving-heart">❤️</span> <!-- Moving heart animation -->
+        </div>
+        <p>Hi babe, I’d love for you to be my Valentine’s date this year, from February 14 to February 18, 2024, and share every moment with me in Hong Kong. 💕</p>
+    </header>
+
+    <div id="response-options">
+        <button id="no-button" onclick="redirectToNoChoice()">No :(</button>
+        <button id="absolutely-button" onclick="redirectToThankYou()">Absolutely</button> <!-- Redirect to the "Thank You" page -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Have No Choice</title>
+    <style>
+        /* Ensure full screen coverage */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 50%; /* Vertically center the video */
+            left: 50%; /* Horizontally center the video */
+            transform: translate(-50%, -50%); /* Adjust position to center */
+            width: 100%; /* Make the video span the entire width */
+            height: 100%; /* Make the video span the entire height */
+            object-fit: contain; /* Ensure the entire video fits without being cropped */
+            z-index: -1; /* Make sure the video is behind the content */
+        }
+
+        .content {
+            position: absolute;
+            top: 5%; /* Move the text even higher */
+            left: 50%;
+            transform: translateX(-50%); /* Center text horizontally */
+            text-align: center;
+            color: white;
+            z-index: 1; /* Ensure content is above the video */
+        }
+
+        h1 {
+            font-size: 5rem; /* Make "You Have No Choice!" text bigger */
+            color: red;
+            margin-bottom: 20px; /* Space between the title and the second text */
+        }
+
+        .bottom-text {
+            position: absolute;
+            bottom: 20px; /* Move the second text to the bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Center the bottom text horizontally */
+            font-size: 1.5rem; /* Adjust the font size of the bottom text */
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-background">
+        <source src="background.mp4" type="video/mp4">  <!-- Change 'background.mp4' to your video file name -->
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <h1>You Have No Choice!</h1>
+    </div>
+
+    <div class="bottom-text">
+        <p>Looks like you’ve made your choice! 😄</p>
+    </div>
+
+    <script>
+        // Redirect after 2 seconds delay
+        setTimeout(function() {
+            // Change 'no-choice.html' to the page you want to redirect to after the delay
+            window.location.href = 'no-choice.html'; // Replace with the target page
+        }, 2000); // 2000 milliseconds = 2 seconds
+    </script>
+
+</body>
+</html>

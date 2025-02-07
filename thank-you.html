@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        /* Reset basic styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Smaller pink background */
+        .content {
+            background-color: rgba(255, 20, 147, 0.6); /* Transparent pink background */
+            padding: 50px; /* Padding to make the background smaller */
+            border-radius: 10px; /* Optional: rounded corners for the pink background */
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        /* Fireworks GIF background */
+        .fireworks {
+            position: fixed; /* Make sure it stays fixed at the background */
+            top: 0;
+            left: 0;
+            width: 100vw; /* Ensure it covers the full viewport width */
+            height: 100vh; /* Ensure it covers the full viewport height */
+            background: url('fireworks.gif') no-repeat center center fixed;
+            background-size: cover; /* Ensure fireworks cover the entire page */
+            z-index: -1; /* Position the fireworks behind the content */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>See you, babe! I love you! 💖</h1>
+        <p>I'm so excited for our Valentine’s Day plans! 💕</p>
+    </div>
+
+    <!-- Fireworks GIF background -->
+    <div class="fireworks"></div>
+
+</body>
+</html>
